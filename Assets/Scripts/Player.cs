@@ -44,12 +44,12 @@ public class Player : MonoBehaviour
                 isFacingRight = true;
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
-            moveAmmount = movement.normalized * speed;
             animator.SetBool("Running", true);
 
         }
         else
             animator.SetBool("Running", false);
+        moveAmmount = movement.normalized * speed;
     }
 
     private void FixedUpdate()
