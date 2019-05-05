@@ -55,13 +55,11 @@ public class Player : MonoBehaviour
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
                 armGun.transform.rotation = Quaternion.Euler(0f, 0f, angle + 45);
-                Debug.Log(angle); //-61
             }
             if (angle < -90 || angle > 90)
             {
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
                 armGun.transform.rotation = Quaternion.Euler(180f, 0f, -(angle - 45));
-                Debug.Log(angle);//-134
             }
         }
         else // é tudo aquilo que é executado enquanto ele está na animação de provoque
@@ -86,8 +84,8 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
+        animator.SetTrigger("Die");
         Destroy(gameObject);
-        Debug.Log("Morreu");
     }
 
     public void TakeDamage(int damage)

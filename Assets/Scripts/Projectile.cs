@@ -17,6 +17,7 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
+        //transform.localRotation = Quaternion.Euler(0, 0, 90);
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
