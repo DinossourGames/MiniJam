@@ -26,4 +26,29 @@ public class Projectile : MonoBehaviour
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Enemy")
+        {
+
+            if (collision.collider.GetComponent<Enemy>() == null)
+            {
+                collision.collider.GetComponent<RangedEnemy>().TakeDamage(1);
+                DestroyProjectile();
+            }
+            else
+            {
+                collision.collider.GetComponent<Enemy>().TakeDamage(1);
+                DestroyProjectile();
+            }
+        }
+        if (collision.collider.tag == "Env")
+        {
+            Destroy(collision.collider.gameObject);
+            DestroyProjectile();
+        }
+
+    }
+
 }

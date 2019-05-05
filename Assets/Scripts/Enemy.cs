@@ -5,29 +5,28 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private Transform player;
-    public float stopDistance = 1f;
+    public Transform player;
+    public float stopDistance;
     public int speed;
-    private Rigidbody2D rb;
 
-    public float MaxKnockDistance = 10;
-    private float atualKnock;
     private Vector2 vetor;
+    public int maxHp;
+    public int currentHp;
+    public float timeBetweenAttacks;
 
-    // Start is called before the first frame update
+    public GameObject Confetes;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = GetComponent<Rigidbody2D>();
-        atualKnock = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        KnockCheck();
-
-        if (GameObject.FindGameObjectsWithTag("Player").Length > 0)
+        
+        if (player != null)
         {
 
             if (Vector2.Distance(transform.position, player.position) > stopDistance && player)
@@ -41,30 +40,27 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.collider.CompareTag("Player"))
+    //    {
+    //        collision.collider.GetComponent<Player>().TakeDamage(1);
+    //    }
+    //}
+
+    public void TakeDamage(int damage)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (currentHp > 0)
         {
-            collision.collider.GetComponent<Player>().TakeDamage(1);
+            currentHp -= damage;
+            Debug.Log(currentHp.ToString());
         }
-    }
-
-
-    private void KnockCheck()
-    {
-        if (rb.velocity != Vector2.zero)
+        else
         {
-            if (atualKnock >= MaxKnockDistance)
-            {
-                atualKnock = 0;
-                rb.velocity = Vector2.zero;
-
-            }
-            else
-            {
-                atualKnock = Vector2.Distance(transform.position, player.position);
-            }
-
+            Instantiate(Confetes, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
+
     }
+ 
 }

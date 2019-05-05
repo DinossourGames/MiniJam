@@ -54,12 +54,12 @@ public class Player : MonoBehaviour
             if (angle > -90 && angle < 90)
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
-                armGun.transform.rotation = Quaternion.Euler(0f, 0f, angle + 45);
+                armGun.transform.rotation = Quaternion.Euler(0f, 0f, angle );
             }
             if (angle < -90 || angle > 90)
             {
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
-                armGun.transform.rotation = Quaternion.Euler(180f, 0f, -(angle - 45));
+                armGun.transform.rotation = Quaternion.Euler(180f, 0f, -(angle ));
             }
         }
         else // é tudo aquilo que é executado enquanto ele está na animação de provoque

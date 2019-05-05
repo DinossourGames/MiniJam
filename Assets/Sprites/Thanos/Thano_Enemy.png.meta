@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: f820f063b9d7d2f45955b334c6a99b97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2642243513833039300
+    second: TEnemy_Body
+  - first:
+      213: 617282954662000819
+    second: Thano_Enemy_1
+  - first:
+      213: 6046635167059298027
+    second: TEnemy_Eyes
+  - first:
+      213: -2868100166390042890
+    second: TEnemy_LArm
+  - first:
+      213: 293423222672097174
+    second: TEnemy_Leaf
+  - first:
+      213: 9081321157246890277
+    second: TEnemy_Thing
+  - first:
+      213: -5465031199705820038
+    second: TEnemy_LLeg
+  - first:
+      213: -5670905690445718405
+    second: TEnemy_RLeg
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TEnemy_Body
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 420
+        width: 525
+        height: 521
+      alignment: 9
+      pivot: {x: 0.50342375, y: 0.10325298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42ee01b46ffa4047a8ff4a6e1666af2
+      internalID: 2642243513833039300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thano_Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 463
+        width: 120
+        height: 234
+      alignment: 9
+      pivot: {x: 0.12553456, y: 0.9455188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccd68573b7a37c4286008396a7df46d
+      internalID: 617282954662000819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 572
+        width: 543
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd67b0bbd1011124e9a6421f5a4d7334
+      internalID: 6046635167059298027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_LArm
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 99
+        width: 121
+        height: 234
+      alignment: 9
+      pivot: {x: 0.85651696, y: 0.93783736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7588619f4b546c4db03fde6f45252b1
+      internalID: -2868100166390042890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_Leaf
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 126
+        width: 396
+        height: 271
+      alignment: 9
+      pivot: {x: 0.8767358, y: 0.40714368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906a6bc2436a034e8239145fc26620f
+      internalID: 293423222672097174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_Thing
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 283
+        width: 71
+        height: 118
+      alignment: 9
+      pivot: {x: 0.7278468, y: 0.19535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6069a7a0617574f890678a7eacf335
+      internalID: 9081321157246890277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_LLeg
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 84
+        width: 53
+        height: 185
+      alignment: 9
+      pivot: {x: 0.22868894, y: 0.90806746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e38390295764d44e80d22ecdc0e9488
+      internalID: -5465031199705820038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEnemy_RLeg
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 91
+        width: 52
+        height: 185
+      alignment: 9
+      pivot: {x: 0.2926043, y: 0.88863516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fda3b63f14b2aa41a6c0d85037e4a7a
+      internalID: -5670905690445718405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 74d9bf2328d81f44196ea01bc53621da
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
