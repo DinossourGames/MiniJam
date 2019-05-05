@@ -14,14 +14,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveAmmount;
 
-    private bool isFacingRight;
+
+    public GameObject armGun;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentHp = maxHp;
-        isFacingRight = true;
     }
 
     void Update()
@@ -33,29 +33,48 @@ public class Player : MonoBehaviour
             animator.SetTrigger("Provoque");
 
         if (movement != Vector2.zero)
-        {
-            if (movement.x < 0)
-            {
-                isFacingRight = false;
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
-            }
-            else
-            {
-                isFacingRight = true;
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-            }
             animator.SetBool("Running", true);
-
-        }
         else
             animator.SetBool("Running", false);
+
         moveAmmount = movement.normalized * speed;
+
     }
 
     private void FixedUpdate()
     {
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Ass"))
+
+        Vector3 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position; //pega a posição do mouse na tela
+        float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg); // gera os radiandos pra poder usar na rotação
+
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Ass"))//são as coisas que são executadas enquanto ele não está duranto provoque
+        {
             rb.MovePosition(rb.position + moveAmmount * Time.deltaTime);
+
+            if (angle > -90 && angle < 90)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+                armGun.transform.rotation = Quaternion.Euler(0f, 0f, angle + 45);
+                Debug.Log(angle); //-61
+            }
+            if (angle < -90 || angle > 90)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+                armGun.transform.rotation = Quaternion.Euler(180f, 0f, -(angle - 45));
+                Debug.Log(angle);//-134
+            }
+        }
+        else // é tudo aquilo que é executado enquanto ele está na animação de provoque
+        {
+            if (angle > -90 && angle < 90)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            if (angle < -90 || angle > 90)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+        }
 
     }
 
@@ -63,11 +82,6 @@ public class Player : MonoBehaviour
     {
         if (currentHp <= 0)
             Die();
-    }
-
-    internal void TakeDamage(object damage)
-    {
-        throw new NotImplementedException();
     }
 
     private void Die()

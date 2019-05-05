@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 9bab90c814b693e489179dd6745df3d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8944256405155757620
+    second: Thanos_Leaf
+  - first:
+      213: -893104962344895337
+    second: Thanos_Body
+  - first:
+      213: 2595663418432087642
+    second: Thanos_Eyes
+  - first:
+      213: -6309197498087924771
+    second: Thanos_Thing
+  - first:
+      213: 726691090436248083
+    second: Thanos_LArm
+  - first:
+      213: -6530109278521412563
+    second: Thanos_Chin
+  - first:
+      213: -840428731941008788
+    second: Thanos_Gauntlet
+  - first:
+      213: -2575003634897956370
+    second: Thanos_RArm
+  - first:
+      213: 1389771980952210395
+    second: Thanos_LLeg
+  - first:
+      213: -1846108038751528649
+    second: Thanos_RLeg
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thanos_Leaf
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 740
+        width: 353
+        height: 242
+      alignment: 9
+      pivot: {x: 0.87679994, y: 0.3885889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c429852f6f042a44e9a1f4352b54f43b
+      internalID: -8944256405155757620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_Body
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 79
+        width: 570
+        height: 834
+      alignment: 9
+      pivot: {x: 0.515767, y: 0.16378881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b5ad9d0397f3e4585e4179709dfa83
+      internalID: -893104962344895337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 701
+        width: 458
+        height: 269
+      alignment: 9
+      pivot: {x: 0.5313963, y: 0.446545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fbd115ad7dbd7468ad1000f88a3dc1
+      internalID: 2595663418432087642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_Thing
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 474
+        width: 71
+        height: 118
+      alignment: 9
+      pivot: {x: 0.7531603, y: 0.22581507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe19358bebc800342bdb416d03a16664
+      internalID: -6309197498087924771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_LArm
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 272
+        width: 85
+        height: 216
+      alignment: 9
+      pivot: {x: 0.22509909, y: 0.9160737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd64c8f2ea1d214a9dfaf1835652336
+      internalID: 726691090436248083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_Chin
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 401
+        width: 294
+        height: 204
+      alignment: 9
+      pivot: {x: 0.5550238, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4138fa77af78564884c15dd355fc9b3
+      internalID: -6530109278521412563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_Gauntlet
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 332
+        width: 119
+        height: 188
+      alignment: 9
+      pivot: {x: 0.48489714, y: 0.15581025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89db62cf239b114ab797abb6f7d0da5
+      internalID: -840428731941008788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_RArm
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 193
+        width: 87
+        height: 216
+      alignment: 9
+      pivot: {x: 0.7479227, y: 0.9077523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d026fd94fe3754ab30ae0c2ee36749
+      internalID: -2575003634897956370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_LLeg
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 46
+        width: 48
+        height: 180
+      alignment: 9
+      pivot: {x: 0.31276956, y: 0.9194021}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b4be7569b74a5438b73801d4928b51
+      internalID: 1389771980952210395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thanos_RLeg
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 46
+        width: 48
+        height: 180
+      alignment: 9
+      pivot: {x: 0.35021463, y: 0.9094164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a600bb028db235242be75146933ff9c9
+      internalID: -1846108038751528649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 98696de95a3828b4c890c968e9478c04
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
