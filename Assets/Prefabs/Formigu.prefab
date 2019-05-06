@@ -10,9 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5025574087923016536}
   - component: {fileID: 4473702117588380722}
-  m_Layer: 0
-  m_Name: Formigu 1
-  m_TagString: Untagged
+  - component: {fileID: 339816060617850152}
+  - component: {fileID: 3395953990144529795}
+  - component: {fileID: 4789027465561447671}
+  - component: {fileID: 4251455697082435803}
+  m_Layer: 9
+  m_Name: Formigu
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 212348959072717534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.28, y: 3.99, z: -16.64114}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.24382, y: 0.24382, z: 0.24382}
   m_Children:
   - {fileID: 8429315939207405683}
   - {fileID: 1105517376974393535}
@@ -54,6 +58,96 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &339816060617850152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212348959072717534}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad193092d577174498214d36ece4c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stopDistance: 0.6
+  speed: 8
+  maxHp: 3
+  currentHp: 0
+  timeBetweenAttacks: 0.2
+  Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
+    type: 3}
+--- !u!50 &3395953990144529795
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212348959072717534}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &4789027465561447671
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212348959072717534}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.875154, y: 1.0939426}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.546673, y: 7.0109196}
+  m_EdgeRadius: 0
+--- !u!114 &4251455697082435803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212348959072717534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f6fdf207ea2704eb44d8d69940d473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stopDistance: 4
+  speed: 6
+  maxHp: 4
+  currentHp: 4
+  timeBetweenAttacks: 4
+  Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
+    type: 3}
+  enemyBullet: {fileID: 253302310761766959, guid: a2a2aa9d81b34f543b2d871b45ed3e6e,
+    type: 3}
+  shotPoint: {fileID: 5090461640292793729}
 --- !u!1 &1753660268906159424
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142009854892921286}
   - component: {fileID: 1873768148169864790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_RLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1105517376974393535}
   - component: {fileID: 7047322109377603481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_Bumbum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9041287951044531147}
   - component: {fileID: 4262626013228510019}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_LArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433766264768269536}
   - component: {fileID: 143004798485235231}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_RArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8986899877929725517}
   - component: {fileID: 9070802063925633469}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_LLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -464,7 +558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5090461640292793729}
   - component: {fileID: 902386741522957214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8429315939207405683}
   - component: {fileID: 7316289204429091301}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5063615344777863775}
   - component: {fileID: 3194746158421764062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3039924878814544962}
   - component: {fileID: 1353951739525555371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_LAntena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1139596444874128376}
   - component: {fileID: 6971356438852640903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Formigu_RAntena
   m_TagString: Untagged
   m_Icon: {fileID: 0}

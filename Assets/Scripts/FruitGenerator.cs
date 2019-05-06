@@ -15,7 +15,7 @@ public class FruitGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentCD = Time.time + 1f;
+        currentCD = Time.time + 21f;
     }
 
     private void Update()
@@ -30,8 +30,8 @@ public class FruitGenerator : MonoBehaviour
             if (currentCD <= Time.time)
             {
                 currentCD += Time.time + spawnCooldown;
-                var fruta = fruits[Random.Range(0, fruits.Count)];
-                var spawn = spawnPoints[Random.Range(0, spawnPoints.Count)];
+                var fruta = fruits[Random.Range(0, fruits.Count -1)];
+                var spawn = spawnPoints[Random.Range(0, spawnPoints.Count -1)];
                 Instantiate(fruta, spawn.position, Quaternion.identity);
                 fruits.Remove(fruta);
                 spawnPoints.Remove(spawn);

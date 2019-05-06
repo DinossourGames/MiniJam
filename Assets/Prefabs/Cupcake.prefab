@@ -10,9 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 5003849935605626813}
   - component: {fileID: 8921823459395456341}
-  m_Layer: 0
-  m_Name: Cupcake 1
-  m_TagString: Untagged
+  - component: {fileID: 242745335602631946}
+  - component: {fileID: 8673141032833881478}
+  - component: {fileID: 6495417439936612647}
+  - component: {fileID: 2113998094540934134}
+  m_Layer: 9
+  m_Name: Cupcake
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 185867296092367048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.498162, y: 7.048741, z: -13.27344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.23419, y: 0.23419, z: 0.23419}
   m_Children:
   - {fileID: 1567876216969192325}
   - {fileID: 2893296745133078846}
@@ -53,6 +57,96 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &242745335602631946
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867296092367048}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &8673141032833881478
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867296092367048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.29919267, y: -0.29919195}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.1740413, y: 4.590309}
+  m_EdgeRadius: 0
+--- !u!114 &6495417439936612647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867296092367048}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad193092d577174498214d36ece4c4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stopDistance: 0.6
+  speed: 6
+  maxHp: 1
+  currentHp: 1
+  timeBetweenAttacks: 0
+  Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
+    type: 3}
+--- !u!114 &2113998094540934134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185867296092367048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f6fdf207ea2704eb44d8d69940d473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  stopDistance: 4
+  speed: 6
+  maxHp: 4
+  currentHp: 4
+  timeBetweenAttacks: 4
+  Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
+    type: 3}
+  enemyBullet: {fileID: 253302310761766959, guid: a2a2aa9d81b34f543b2d871b45ed3e6e,
+    type: 3}
+  shotPoint: {fileID: 1992842435884423126}
 --- !u!1 &2581153407551027182
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626075060331140065}
   - component: {fileID: 4469685077187294607}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1567876216969192325}
   - component: {fileID: 373617113149225294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7988922890204126964}
   - component: {fileID: 8675055947944409357}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_LArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992842435884423126}
   - component: {fileID: 9027526593020529541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1983193703105046917}
   - component: {fileID: 1194881098331311274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_RArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2893296745133078846}
   - component: {fileID: 5485342758015360351}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_RLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5447499820059307187}
   - component: {fileID: 2686261276291028071}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cupcake_LLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}

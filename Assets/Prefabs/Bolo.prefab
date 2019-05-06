@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533647031854798087}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4176571349696459293}
   - component: {fileID: 5388250921625478969}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_LLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6823732449220776975}
   - component: {fileID: 2277529284131805761}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_RArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127097835264778081}
   - component: {fileID: 3285005315194614162}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_RLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344806877684460286}
   - component: {fileID: 5982841830014547308}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_RCandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7180113181400832870}
   - component: {fileID: 40453957272862175}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_LArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7224292465898299018}
   - component: {fileID: 6520313591084955035}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,9 +523,9 @@ GameObject:
   - component: {fileID: 6995740674903324152}
   - component: {fileID: 6995740674903324153}
   - component: {fileID: 6995740674903324158}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,10 +580,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  stopDistance: 7
-  speed: 5
+  stopDistance: 4
+  speed: 6
   maxHp: 4
-  currentHp: 0
+  currentHp: 4
   timeBetweenAttacks: 4
   Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
     type: 3}
@@ -647,7 +647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8953519537578908942}
   - component: {fileID: 8654938038301885892}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_LCandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 1792302965212261740}
   - component: {fileID: 1456205561478932149}
   - component: {fileID: 3393429952175414207}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_Brigadeiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3298422000954772958}
   - component: {fileID: 5192439097730525634}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: Bolo_Body
   m_TagString: Enemy
   m_Icon: {fileID: 0}

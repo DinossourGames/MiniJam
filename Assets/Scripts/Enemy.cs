@@ -22,31 +22,28 @@ public class Enemy : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
         if (player != null)
         {
 
-            if (Vector2.Distance(transform.position, player.position) > stopDistance && player)
+
+            Vector2 direction = player.position - transform.position;
+            float angle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg); // gera os radiandos pra poder usar na rotação
+
+
+
+            if (angle > -90 && angle < 90)
             {
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            if (angle < -90 || angle > 90)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+
             }
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.collider.CompareTag("Player"))
-    //    {
-    //        collision.collider.GetComponent<Player>().TakeDamage(1);
-    //    }
-    //}
 
     public void TakeDamage(int damage)
     {

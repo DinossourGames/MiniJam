@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Enemy")
+        if (collision.collider.tag == "Enemy" || collision.collider.tag == "Boss")
         {
 
             if (collision.collider.GetComponent<Enemy>() == null)

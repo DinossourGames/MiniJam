@@ -39,6 +39,9 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
             animator.SetTrigger("Provoque");
 
+        if (Input.GetKeyDown(KeyCode.F5))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
         if (movement != Vector2.zero)
             animator.SetBool("Running", true);
         else
