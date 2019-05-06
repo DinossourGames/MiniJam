@@ -537,7 +537,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6995740674903324159}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.02, y: 5.48, z: 0}
   m_LocalScale: {x: 0.45847857, y: 0.45847857, z: 0.45847857}
   m_Children:
@@ -583,6 +583,7 @@ MonoBehaviour:
   stopDistance: 7
   speed: 5
   maxHp: 4
+  currentHp: 0
   timeBetweenAttacks: 4
   Confetes: {fileID: 3881441431686883794, guid: eff8d7325a5b4bd468f848a2d2b3335b,
     type: 3}
