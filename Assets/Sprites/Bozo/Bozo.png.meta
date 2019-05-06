@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: ffeb45bc068cfed4b944882d8225b46a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8834586546035559742
+    second: Bozo_Body
+  - first:
+      213: 7834494726134036773
+    second: Bozo_Thing
+  - first:
+      213: 6367768172067310034
+    second: Bozo_Leaf
+  - first:
+      213: 211170844873061096
+    second: Bozo_Faixa
+  - first:
+      213: 5589039027695207908
+    second: Bozo_Eyes
+  - first:
+      213: -8527709352035188959
+    second: Bozo_LArm
+  - first:
+      213: -1574121575331552662
+    second: Bozo_RArm
+  - first:
+      213: -7161956784651003054
+    second: Bozo_LLeg
+  - first:
+      213: 8959727313488883993
+    second: Bozo_RLeg
+  - first:
+      213: 624392162675141099
+    second: Bozo_Faixa2
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bozo_Body
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 404
+        width: 638
+        height: 584
+      alignment: 9
+      pivot: {x: 0.50563467, y: 0.06295196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c6411c5e4bc4d46ac93cb01834d170
+      internalID: -8834586546035559742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_Thing
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 760
+        width: 182
+        height: 239
+      alignment: 9
+      pivot: {x: 0.8752891, y: 0.07884338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c940bf96dec2374b8a4b593a82285bb
+      internalID: 7834494726134036773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_Leaf
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 740
+        width: 341
+        height: 252
+      alignment: 9
+      pivot: {x: 0.08885645, y: 0.8851655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6983e10a4b71ea04299501dce4096a81
+      internalID: 6367768172067310034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_Faixa
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 34
+        width: 659
+        height: 474
+      alignment: 9
+      pivot: {x: 0.8845807, y: 0.15871471}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac76dc3ff5282e845b17f09fa2630087
+      internalID: 211170844873061096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 349
+        width: 517
+        height: 342
+      alignment: 9
+      pivot: {x: 0.5625803, y: 0.3580972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c818e20061007734cbced19f6d4be58d
+      internalID: 5589039027695207908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_LArm
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 59
+        width: 77
+        height: 288
+      alignment: 9
+      pivot: {x: 0.85015154, y: 0.94311833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f4b511b5df2c741aa3bc9fc71bd811
+      internalID: -8527709352035188959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_RArm
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 59
+        width: 76
+        height: 288
+      alignment: 9
+      pivot: {x: 0.19254504, y: 0.93687725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b692f18825e6fb49a9982f1f5e70317
+      internalID: -1574121575331552662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_LLeg
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 55
+        width: 42
+        height: 242
+      alignment: 9
+      pivot: {x: 0.45720562, y: 0.92336345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5492fd99071ec124d983126c434a5d6e
+      internalID: -7161956784651003054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_RLeg
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 53
+        width: 42
+        height: 232
+      alignment: 9
+      pivot: {x: 0.41440836, y: 0.941612}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b30a75e4b50fa40a51b65bf192ae2f
+      internalID: 8959727313488883993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bozo_Faixa2
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 74
+        width: 129
+        height: 230
+      alignment: 9
+      pivot: {x: 0.2770627, y: 0.20303236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5c5651715e73c4ead9450f94ed9d2e
+      internalID: 624392162675141099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8b4386326c5b0db49a661bdb32ffcbe2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

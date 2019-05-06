@@ -17,9 +17,10 @@ public class Player : MonoBehaviour
 
     private List<Fruit> catchedFruits;
     public Fruit selected;
-    float cooldownTime = 0; 
+    float cooldownTime = 0;
 
     public GameObject armGun;
+    public bool isBadas;
 
     void Start()
     {
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         CheckLife();
-
+        ChangeFruit();
         Vector2 movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -45,6 +46,34 @@ public class Player : MonoBehaviour
 
         moveAmmount = movement.normalized * speed;
 
+    }
+
+    private void ChangeFruit()
+    {
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
+        {
+            int i = catchedFruits.IndexOf(selected);
+            if (i == catchedFruits.Count - 1)
+
+                selected = catchedFruits[0];
+            else
+            {
+                i++;
+                selected = catchedFruits[i];
+            }
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
+        {
+            int i = catchedFruits.IndexOf(selected);
+            if (i == 0)
+
+                selected = catchedFruits[catchedFruits.Count - 1];
+            else
+            {
+                i--;
+                selected = catchedFruits[i];
+            }
+        }
     }
 
     internal void CatchFruit(Fruit fruit)
@@ -62,6 +91,18 @@ public class Player : MonoBehaviour
             currentHp += healAmmount;
         else
             currentHp = maxHp;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            if (isBadas)
+            {
+                collision.GetComponent<Enemy>().TakeDamage(500);
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -102,9 +143,9 @@ public class Player : MonoBehaviour
 
     private void FruitInteractions()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && cooldownTime <= Time.time)
+        if (Input.GetMouseButtonDown(1) && cooldownTime <= Time.time)
         {
-           cooldownTime =  Time.time + selected.Effect(gameObject);
+            cooldownTime = Time.time + selected.Effect(gameObject);
         }
     }
 

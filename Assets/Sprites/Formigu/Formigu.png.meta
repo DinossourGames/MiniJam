@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: dc9aa837fb432d04ba96811ea2c9b2c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1141999405399817211
+    second: Formigu_Bumbum
+  - first:
+      213: -6491690981689482426
+    second: Formigu_Body
+  - first:
+      213: 7456475348005822407
+    second: Formigu_Head
+  - first:
+      213: 7451365643541595432
+    second: Formigu_Eyes
+  - first:
+      213: -3576879138723976069
+    second: Formigu_4
+  - first:
+      213: -2060541825162412326
+    second: Formigu_5
+  - first:
+      213: -2956340995466562731
+    second: Formigu_LAntena
+  - first:
+      213: 9203951346143093473
+    second: Formigu_RAntena
+  - first:
+      213: -2075104465457201554
+    second: Formigu_LLeg
+  - first:
+      213: 3811329367750152515
+    second: Formigu_RLeg
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Formigu_Bumbum
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 411
+        width: 402
+        height: 283
+      alignment: 9
+      pivot: {x: 0.8889976, y: 0.45554054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df71c787f9905a544ba6d54b0fdcf136
+      internalID: 1141999405399817211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_Body
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 661
+        width: 139
+        height: 266
+      alignment: 9
+      pivot: {x: 0.5, y: 0.13510706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d44f6255e38bb545bdbce2a1a8f86aa
+      internalID: -6491690981689482426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_Head
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 580
+        width: 410
+        height: 351
+      alignment: 9
+      pivot: {x: 0.49561605, y: 0.0954489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e954e64dadf41ce46899bd632e1f3813
+      internalID: 7456475348005822407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 667
+        width: 346
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b697766912ba6242aec842df33a7f32
+      internalID: 7451365643541595432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 193
+        width: 73
+        height: 233
+      alignment: 9
+      pivot: {x: 0.84471405, y: 0.93200237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd024424955b61c46acfc82519d61027
+      internalID: -3576879138723976069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_5
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 193
+        width: 73
+        height: 233
+      alignment: 9
+      pivot: {x: 0.13066456, y: 0.93200237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215c77a9ab4147e4da658fb330d7e1c9
+      internalID: -2060541825162412326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_LAntena
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 319
+        width: 138
+        height: 256
+      alignment: 9
+      pivot: {x: 0.6302499, y: 0.043619633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c743f4ef1672fbb4194a218f5cf108b4
+      internalID: -2956340995466562731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_RAntena
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 314
+        width: 154
+        height: 250
+      alignment: 9
+      pivot: {x: 0.28991064, y: 0.032666627}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807b34030359be248bdbd8298b58f590
+      internalID: 9203951346143093473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_LLeg
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 63
+        width: 43
+        height: 252
+      alignment: 9
+      pivot: {x: 0.41639817, y: 0.9208288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbe40a00afbdba4caf2343212fcc977
+      internalID: -2075104465457201554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Formigu_RLeg
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 86
+        width: 43
+        height: 206
+      alignment: 9
+      pivot: {x: 0.3745969, y: 0.9275461}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a919fba041c4f4db922e64446ce8e4
+      internalID: 3811329367750152515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 898d0af77cb993644b347bc89d086a39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

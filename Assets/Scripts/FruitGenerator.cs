@@ -15,7 +15,7 @@ public class FruitGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentCD = Time.time + 60f;
+        currentCD = Time.time + 1f;
     }
 
     private void Update()

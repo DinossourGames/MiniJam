@@ -8,14 +8,8 @@ public class Fruit : MonoBehaviour
     //public string Description;
     public int HealAmmount;
     public int CooldownTime;
-    public Rigidbody2D rb;
     public GameObject particles;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,7 +26,8 @@ public class Fruit : MonoBehaviour
     private void DestroyFruit()
     {
         Instantiate(particles, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, -52);
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public virtual float Effect(GameObject player) { return CooldownTime; }
